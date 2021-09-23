@@ -9,9 +9,10 @@ li{
 }
 ul,ol{
   list-style: none;
+  padding-left: 0;
 }
 a{
-  text-decoration: none !important;
+  text-decoration: none;
 }
 img{
   max-width: 100%;
@@ -47,8 +48,6 @@ img{
   margin-top: 12px;
   display: inline-block;
 }
-.menu{}
-.menu ul{}
 .menu ul li{
   display: inline-block;
 }
@@ -60,10 +59,14 @@ img{
 }
 .menu ul li a:hover{}
 /* Banner */
-.banner{
-  background:url(https://i.postimg.cc/5N5f4yjg/header-bg01.jpg) no-repeat center center ;
+.banner {
+  background: url(https://i.postimg.cc/5N5f4yjg/header-bg01.jpg) no-repeat center center;
+      background-size: auto;
   background-size: cover;
-  padding:180px ;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .banner h1 {
   font-size: 65px;
@@ -79,6 +82,11 @@ img{
   display: inline-block;
   border-radius: 5px;
   margin-top: 46px;
+  transition: .4s;
+}
+.banner a:hover {
+  background: #fff;
+  color: #0bbf9a;
 }
 /* Service */
 .service-heading{
